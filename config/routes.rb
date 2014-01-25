@@ -57,4 +57,8 @@ Ratebeer::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get 'ratings', to: 'ratings#index'
+
+  root 'breweries#index'
 end
