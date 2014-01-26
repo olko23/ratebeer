@@ -4,4 +4,5 @@ class Rating < ActiveRecord::Base
   def to_s
     return "#{Beer.find_by(id:beer_id)} #{score}"
   end
+
 end
