@@ -59,6 +59,8 @@ Ratebeer::Application.routes.draw do
   #   end
 
   get 'ratings', to: 'ratings#index'
+  get 'ratings/new', to: 'ratings#new'
+  post 'ratings', to: 'ratings#create'
 
   root 'breweries#index'
 end
